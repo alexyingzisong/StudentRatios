@@ -1,13 +1,12 @@
-setwd("rfiles/studentratios")
+setwd("C:/Users/yingzi/Documents/rfiles/studentratios")
 
 enrolment = read.csv("enrolment.csv", header=TRUE) 
 
-install.packages("ggplot2")
 library(ggplot2)
-install.packages("ggrepel")
 library(ggrepel)
 
-newratio <- newenrolment$Females / newenrolment$Total
+enrolment$newratio <- enrolment$Females / enrolment$Total
+newenrolment <- subset(enrolment,Total>100)
 
 mycolors <- c("#000000","#800000","#FF0000","#AA6E28","#FF9900","#008080","#00BE00","#000080","#820096","#FF00FF","#4385FF")
 
