@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-setwd("C:/Users/yingzi/Documents/rfiles/studentratios")
 
-=======
->>>>>>> df00df176c76f727909b903f115568ad5572296b
 enrolment = read.csv("enrolment.csv", header=TRUE) 
 
 library(ggplot2)
